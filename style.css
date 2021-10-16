@@ -1,0 +1,67 @@
+h1 {
+    color: blue;
+}
+
+body {
+    background-color: #888888;
+    text-align: center;
+}
+
+#bookshelf {
+    background-color: bisque;
+}
+
+.book {
+    background-color: cadetblue;
+}
+
+.formPopup {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+    
+}
+
+.formPopup.active {
+    display: block;
+}
+
+.formPopup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    width:500px;
+    height:250px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+
+    text-align: left;
+}
+
+.content label {
+    display: inline-block;
+    width: 100px
+}
+
+.content input {
+    width: 300px;
+}
+
+.content button {
+    width: 400px;
+}
+
+.content li {
+    list-style-type: none;
+}

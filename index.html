@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Library</title>
+        <script src="scripts.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</html>
+
+<body>
+    <h1>Hello World!</h1>
+    <div id='bookshelf'></div>
+    <button id='makeNewBook'>Add New Book</button>
+</body>
+
+<div class="formPopup" id="formPopup1">
+    <div class="content">
+        <div class="closeFormBtn">&times;</div>
+        <form ><!--action="scripts.js" method="post">-->
+            <ul>
+                <li>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="bookTitle">
+                </li>
+                <li>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="bookAuthor">
+                </li>
+                <li>
+                    <label for="numPages">Num Pages:</label>
+                    <input type="text" id="numPages" name="bookNumPages">
+                </li>
+                <li>
+                    <label for="haveRead">Have Read:</label>
+                    <input type="checkbox" id="haveRead" name="bookRead">
+                </li>
+                <li>
+                    <button type="submit" id="submit">Submit</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
