@@ -65,3 +65,7 @@ body {
 .content li {
     list-style-type: none;
 }
+
+.deleteBook {
+    background-color: chartreuse;
+}

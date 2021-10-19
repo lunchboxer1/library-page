@@ -71,10 +71,15 @@ function showBooks() {
         const divBookTitle = document.createElement('div');
         const divBookInfo = document.createElement('div');
         const divBookHaveRead = document.createElement('div');
-        //con
+        
+        const btnDelete = document.createElement('button');
+        btnDelete.classList.add('deleteBook');
+        btnDelete.textContent='Delete';
+
         divBook.className = "book";
 
         divBook.textContent = book.info();
+        divBook.appendChild(btnDelete);
 
         divBookShelf.appendChild(divBook);
     })
